@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BUGGER!</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <h1 class="title-super">Bugger!</h1>
+    <div class="container">
+    <div class="row">
+        <button type="button" class="button large-btn" data-toggle="modal" data-target="#instructions">Instructions
+        </button>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <h4>Difficulty Selection</h4>
+    </div>
+    <div class="row">
+        <button onclick="level(1)" type="button" class="button medium-btn">Noob</button>
+        <button onclick="level(5)" type="button" class="button medium-btn">Learnin'</button>
+        <button onclick="level(10)" type="button" class="button medium-btn">Aight...</button>
+        <button onclick="level(20)" type="button" class="button medium-btn">Annoying.</button>
+        <button onclick="level(30)" type="button" class="button medium-btn">PLAGUUUU</button>
+        <button onclick="level(40)" type="button" class="button medium-btn">IMPOSSIBRU!!</button>
+    </div>
+</div>
+
+    <!-- Modal for Instructions -->
+    <div class="modal fade text-center" id="instructions" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title text-dark" id="myModalLabel1">Bugger! Instructions</h4>
+                </div>
+                <div class="modal-body">
+                    <h3>Use the arrow keys to move in half-square increments.</h3>
+                    <h3>Reach the river to get 1 point.</h3>
+                    <h3>Be wary of the bugs (-1 point). 
+                    <h3>Reach 3 points to get to the next level!</h3>
+                    <h4>Bonus: See what happens when you walk over another character!</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
+    <h3 id="score">Level: 1 | Score: 0</h3>
+    <h4 id="score-note"></h4>
+</body>
+
+</html>
